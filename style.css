@@ -33,6 +33,11 @@ a {
     background-color: white;
 }
 
+.button.purple {
+    color: white;
+    background-color: #929FDD;
+}
+
 
 /*Header*/
 header {
@@ -118,12 +123,12 @@ h1 {
     line-height: 22px;
 }
 
-#jumbo-buttons {
+.jumbo-buttons {
     margin-top: 15px;
     font-size: 14px;
 }
 
-#jumbo-buttons a {
+.jumbo-buttons a {
     padding: 12px 20px;
     margin: 0 10px;
 }
@@ -134,8 +139,19 @@ main {
 }
 
 main section {
-    height: 450px;
     position: relative;
+}
+
+.small-section {
+    height: 450px;
+}
+
+.section-white {
+    background-color: white;
+}
+
+.section-begie {
+    background-color: #F6F6F6;
 }
 
 .section-container {
@@ -146,29 +162,66 @@ main section {
     width: 800px;
 }
 
-.section-container img {
+.small-section.section-white .section-container img,
+.small-section.section-begie .section-container .section-text {
     float: left;
+}
+
+.small-section.section-white .section-container .section-text,
+.small-section.section-begie .section-container img {
+    float: right;
+}
+
+.small-section .section-container img {
     width: 450px;
 }
 
-.section-container .section-text {
-    float: right;
+.small-section .section-container .section-text {
     width: 240px;
-}
-
-.section-text {
     padding-top: 20px;
 }
 
 .section-text h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .section-text p {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
 }
 
-.section-begie {
-    background-color: #F6F6F6;
+/*Ultima sezione*/
+
+.big-section {
+    height: 1000px;
+    text-align: center;
+}
+
+.big-section img {
+    width: 100%;
+}
+
+.big-section .section-text {
+    text-align: center;
+    padding: 0 50px;
+}
+
+#last-download img {
+    width: 400px;
+}
+
+.image-container {
+    overflow: hidden;
+    height: 37px;
+}
+
+#last-download .button {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: #292B2E;
 }
