@@ -19,12 +19,20 @@ a {
 }
 
 .button{
-    background-color: white;
     display: inline-block;
-    padding: 6px 8px;
     border-radius: 20px;
-    color: black;
 }
+
+.button.black {
+    color: white;
+    background: #292B2E;
+}
+
+.button.white {
+    color: black;
+    background-color: white;
+}
+
 
 /*Header*/
 header {
@@ -56,6 +64,7 @@ header {
 
 #login-button a{
     font-size: 10px;
+    padding: 6px 8px;
 }
 
 nav {
@@ -81,15 +90,44 @@ nav li a:hover {
 
 #first-section {
     background-color: #255EE9;
-}
-
-#jumbo {
     margin-top: 50px;
     background-image: url(img/jumbo.png);
     background-size: cover;
     height: 380px;
+    position: relative;
 }
 
+#jumbo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 520px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#jumbo p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#jumbo-buttons {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#jumbo-buttons a {
+    padding: 12px 20px;
+    margin: 0 10px;
+}
+
+/*Sezioni main*/
 main {
     width: 100%;
 }
