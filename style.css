@@ -42,6 +42,7 @@ header {
     left: 0;
     width: 100%;
     height: 50px;
+    z-index: 1;
 }
 
 #header-container {
@@ -114,7 +115,7 @@ h1 {
 
 #jumbo p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 #jumbo-buttons {
@@ -130,4 +131,44 @@ h1 {
 /*Sezioni main*/
 main {
     width: 100%;
+}
+
+main section {
+    height: 450px;
+    position: relative;
+}
+
+.section-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+
+.section-container img {
+    float: left;
+    width: 450px;
+}
+
+.section-container .section-text {
+    float: right;
+    width: 240px;
+}
+
+.section-text {
+    padding-top: 20px;
+}
+
+.section-text h2 {
+    margin-bottom: 10px;
+}
+
+.section-text p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.section-begie {
+    background-color: #F6F6F6;
 }
