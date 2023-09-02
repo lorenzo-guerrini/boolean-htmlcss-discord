@@ -1,0 +1,316 @@
+/* Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.button.black {
+  color: white;
+  background: #292b2e;
+}
+
+.button.white {
+  color: black;
+  background-color: white;
+}
+
+.button.purple {
+  color: white;
+  background-color: #929fdd;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+/* Header */
+header {
+  background-color: #255ee9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+#header-container {
+  height: 100%;
+  text-align: center;
+}
+
+#logo,
+#login-button,
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#logo {
+  margin-top: 10px;
+}
+
+#logo img {
+  width: 80px;
+}
+
+#login-button a {
+  font-size: 10px;
+  padding: 6px 8px;
+}
+
+nav {
+  margin: 0 15vw;
+  line-height: 42px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+nav li a {
+  color: white;
+  font-size: 11px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* First Section */
+#first-section {
+  background-color: #255ee9;
+  margin-top: 50px;
+  background-image: url(/img/jumbo.png);
+  background-size: cover;
+  min-height: 380px;
+  position: relative;
+}
+
+#jumbo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 520px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#jumbo p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.jumbo-buttons {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.jumbo-buttons a {
+  padding: 12px 20px;
+  margin: 0 10px;
+}
+
+/* Main Sections */
+main {
+  width: 100%;
+}
+
+main section {
+  position: relative;
+}
+
+.small-section {
+  height: 450px;
+}
+
+.section-white {
+  background-color: white;
+}
+
+.section-begie {
+  background-color: #f6f6f6;
+}
+
+.section-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}
+
+.small-section.section-white .section-container img,
+.small-section.section-begie .section-container .section-text {
+  float: left;
+}
+
+.small-section.section-white .section-container .section-text,
+.small-section.section-begie .section-container img {
+  float: right;
+}
+
+.small-section .section-container img {
+  width: 450px;
+}
+
+.small-section .section-container .section-text {
+  width: 240px;
+  padding-top: 20px;
+}
+
+.section-text h2 {
+  margin-bottom: 15px;
+}
+
+.section-text p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Last Section */
+.big-section {
+  height: 1000px;
+  text-align: center;
+}
+
+.big-section img {
+  width: 100%;
+}
+
+.big-section .section-text {
+  text-align: center;
+  padding: 0 50px;
+}
+
+#last-download img {
+  width: 400px;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 37px;
+}
+
+#last-download .button {
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+section h4 {
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #292b2e;
+  color: white;
+  height: 450px;
+}
+.footer-links {
+  height: 270px;
+  border-bottom: 1px solid #929fdd44;
+}
+
+.footer-container {
+  padding-top: 60px;
+  width: 780px;
+  margin: auto;
+}
+
+.footer-block-social,
+.footer-block-generic {
+  display: block;
+  float: left;
+}
+
+.footer-block-social img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+.footer-block-social span {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.footer-block-title,
+h4 {
+  color: #929fdd;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.footer-block-social i {
+  font-size: 13px;
+  margin-right: 13px;
+}
+
+#language-selector {
+  font-size: 6px;
+  vertical-align: middle;
+}
+
+.footer-block-social {
+  width: 200px;
+}
+
+.socials {
+  margin-top: 5px;
+}
+
+.footer-block-generic {
+  font-size: 11px;
+  line-height: 20px;
+  margin: 0 35px;
+}
+
+.footer-block-generic li {
+  list-style: none;
+}
+
+.footer-block-generic li a {
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: 25px;
+}
+
+.footer-bottom img {
+  width: 80px;
+  float: left;
+}
+
+.footer-bottom a {
+  float: right;
+  padding: 6px 8px;
+  font-size: 10px;
+}
